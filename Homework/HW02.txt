@@ -1,0 +1,71 @@
+--Name: Walter
+--File: ISTA322HW1
+--Date: Feb 22, 2021
+
+
+1.  What is the difference between Visual Studio and Visual Studio Code?
+Visual studio - the traditional development environment for . Potentially harmful due to insistent features and tools trying to help NET apps and it offers an enormous range of tools and features for developing all sorts of apps. Resource ungry and slow.
+
+Visual studio code is a lightweight adaptation of studio whihc doesn't have the bells and whistles in comparision but is 100% capable of hosting .net apps.
+
+
+2.  What isLocalDB?
+a zero-config version of SQL-Server that can be installed as part of the SQL Server Express edition for free.
+
+
+3.  What do these commands do? dotnet new globaljson --sdk-version 3.1.101 --output FirstProjectdotnet new mvc --no-https --output FirstProject --framework netcoreapp3.
+
+These commandline entries create a new project within .NET:
+the first line creates the folder FirstProject and adds it to a file named global.json which specifies the version within NET Core for the project. The second creates a new .NET project file. 
+
+
+
+14.  What command do you use to build an ASP.NET project from the command line?  What commanddo you use to run the project?
+dotnet new mvc --no-https --output FirstProject --framework netcoreapp3.1; dodnet run.
+
+
+
+5.  What is the purpose of an endpoint? Handles incoming requests. 
+
+
+6.  What is a controller? 
+Serves as the mediator between a user and application and handles business related tasks triggered in ASP.NET. A controller is used for scripting exposed and middle-tier endpoints for expected user actions and results.
+
+
+
+
+7.  Where are actions defined? 
+Defined in the result of the endpoint. Actions are defined in a controller. 
+
+
+
+8.  What is the purpose of the routing system?
+responsible for selecting the endpoint that will handle an HTTP request; Route is a rule that is used to decide how a request is handled.
+
+
+
+9.  Assume that your ASP.NET application runs in a browser with a URL likehttp://localhost:5000.List the three default routes configured by the ASP.NET Core routing system.
+/
+/Home
+/Home.Index
+
+
+
+10.  What does the ViewResult object instruct ASP.NET Core to do?
+instructs the ASP.NET to render a view. 
+
+
+
+11.  How does ASP.NET Core know what View is to be called from an action method?
+The index action method defined by the home controller, the method is invoked and produces a ViewResult  object that contains the name of a view and a view model object.Then the razor view engine locates and processes the view. Evualtiong the contents and performs selected action then returns to the browser and is displayed.
+
+
+
+12.  What is the job of an action method?
+to construct data and padd it to the view sp ot cam ne ised tp create HTML content based on the data values. Action methods provide data to views by
+passing arguments to the View method.
+
+
+
+13.  What is a view model?
+the data provided to the view is known as the view model. provided to the view as the second argument to the View method

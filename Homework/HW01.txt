@@ -1,0 +1,78 @@
+--Name: Walter
+--File: ISTA322HW1
+--Date: Feb 22, 2021
+
+
+1. (not in book) What is HTML? See https://www.w3.org/TR/html40/.
+
+Stands for "Hypertext Markup Language." HTML is the language used to create webpages. 
+
+"Hypertext" refers to the hyperlinks that an HTML page may contain. 
+
+"Markup language" refers to the way tags are used to define the page layout and elements within the page.
+
+
+
+2. (not in book) What is HTTP? See https://www.w3.org/Protocols/rfc2616/rfc2616.html.
+
+HTTP is a protocol which allows the fetching of resources, such as HTML documents. 
+
+It is the foundation of any data exchange on the Web and it is a client-server protocol, 
+
+which means requests are initiated by the recipient, usually the Web browser.
+
+
+
+3. What is middleware? See pages 255-256 in the book.
+
+Middleware is software that provides common services and capabilities to applications outside of what's offered by the operating system. 
+
+Data management, application services, messaging, authentication, and API management are all commonly handled by middleware.
+
+
+
+4. What is URL routing? See pages 282-283 in the book.
+
+URL Routing is the process of intercepting an incoming Web request and automatically redirecting it to a different URL.
+
+
+
+5. What is dependency injection? See pages 255-257 in the book.
+
+Service from ASP.NET Core makes it possible to easily access services anywhere in the application, including middleware components.
+
+
+
+6. What is model binding? See pages 703-706 in the book.
+
+Model binding is a well-designed bridge between the HTTP request and the C# action methods. 
+
+It makes it easy for developers to work with data on forms (views), because POST and GET is automatically transferred into a data model you specify.
+
+
+
+7. What are Razor pages?
+
+Razor Pages is designed to make common patterns used with web browsers easy to implement when building an app. 
+
+
+
+8. What is Entiity Framework Core?
+
+Entity Framework is an Object/Relational Mapping (O/RM) framework. 
+
+It is an enhancement to ADO.NET that gives developers an automated mechanism for accessing & storing the data in the database.
+
+
+
+9. What is ASP.NET Core Identity?
+
+ASP.NET Core Identity is a membership system that adds login functionality to ASP.NET Core apps. 
+
+Users can create an account with the login information stored in Identity or they can use an external login provider
+
+
+
+10. What is the ASP.NET Core platform?
+
+The ASP.NET Core platform is the foundation for creating web applications and provides the features that allow frameworks like MVC and Blazor to be used.

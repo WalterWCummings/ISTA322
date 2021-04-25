@@ -1,0 +1,64 @@
+## Walter Cummings
+## C# HW Chapter 17
+
+
+
+
+
+1. What is a type parameter?
+
+A type parameter, also known as a type variable, is an identifier that specifies a generic type name. The type parameters can be used to declare the return type and act as placeholders for the types of the arguments passed to the generic method
+
+
+
+2. What does a type parameter do?
+
+Acts as placeholders for the types of the arguments passed to the generic method.
+
+
+
+3. How many type parameters can a generic class have?
+
+As with generic methods, the type parameter section of a generic class can have one or more type parameters separated by commas. 
+
+
+
+4. What is the difference between a generic class and a generalized class?
+
+It is important to be aware that a generic class that uses type parameters is different from a generalized class designed to take parameters that can be cast to different types. 
+
+
+
+5. What is a constraint? How do you specify a constraint?
+
+By using a constraint, you can limit the type parameters of a generic class to those that implement a particular set of interfaces and therefore provide the methods defined by those interfaces. 
+
+
+
+6. What is a generic method? How do you define a generic method?
+
+You can specify the types of the parameters and the return type by using a type parameter like that used when you define a generic class. You can define generalized methods that are type safe and avoid the overhead of casting (and boxing, in some cases).
+
+
+
+7. What do we mean when we say that a generic type interface is invariant?
+
+ An invariant generic type parameter is neither covariant nor contravariant. You cannot assign an instance of List<Base> to a variable of type List<Derived> or vice versa.
+
+
+
+8. What do we mean when we say that a generic type interface is covariant?
+
+You do not specify the out modifier with generic classes.
+
+
+
+9. Does covariance work with value types? Does it work with reference types?
+
+covariance works only with reference types. This is because value types cannot form inheritance hierarchies.
+
+
+
+10. What do we mean when we say that a generic type interface is contravariant?
+
+it enables you to use a generic interface to reference an object

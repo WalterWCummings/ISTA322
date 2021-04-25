@@ -1,0 +1,50 @@
+## NAME:Walter Cummings
+## DATE: MAR 9th, 2021
+## FILE: HW06
+
+
+1.  What is unit testing as defined by the book?
+Unit testing is a form of testing in which individual
+components are isolated from the rest of the application so their behavior can be thoroughly validated.
+
+
+2.  What is the convention for creating unit tests in ASP.NET Core applications?
+Using the dotnet new command tool with the project template.
+
+
+3.  Name three unit test project tools used for ASP.NET Core applications.
+mstest This template creates a project configured for the MS Test framework, which is produced by Microsoft.
+nunit This template creates a project configured for the NUnit framework.
+xunit This template creates a project configured for the XUnit framework.
+
+4.  What is the convention for naming unit tests in ASP.NET Core applications?
+<ApplicationName>.Tests.
+
+
+5.  What  is  the  convention  for  naming  the  test  classes  in  AP.NET  Core?   What  is  the  convention  for naming the methods in the test classes?
+ProdcuctTest
+Name the classs what part of the code is being tested.
+
+
+6.  What is the purpose of the Fact attribute in X unit?  (not in book) What is the purpose of the Theory attribute in Xunit?
+The Fact attribute is applied to each method to indicate that it is a test.
+
+
+7.  Describe the different elements of the AAA testing pattern.
+Arrange refers to setting up the conditions for the test, 
+act refers to performing the test, 
+assert refers to verifying that the result was the one that was expected.
+
+8.  Describe the use of the methods in the Assert class.  Describe the purpose,  parameters,  and return value of the Assert.Equals()method.
+
+
+9.  What is the key to isolating a component for testing?
+C# Interfaces.
+
+
+10.  What is a mocking package?  What does it do?
+create fake—or mock—objects for tests
+
+
+11.  (not in book) What is the difference between theSetup()and theSetupGet()methods of Moq?
+Setup() can be used for mocking a method or a property. SetupGet() is specifically for mocking the getter of a property.

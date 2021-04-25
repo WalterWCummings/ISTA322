@@ -1,0 +1,65 @@
+## NAME:Walter Cummings
+## DATE: MAR 8th, 2021
+## FILE: HW05
+
+
+1.  What is the purpose of the null conditional operator?  Does it apply to value types or reference types?Why or why not?
+
+The null conditional operator allows for null values to be detected more elegantly.
+
+
+2.  What is the null coalescing operator?  What does it do?
+
+to set a fallback value to prevent null values being used in the app.
+ensures that I don’t get a NullReferenceException when navigating through the object
+properties, and the null coalescing operator ensures that I don’t include null values in the results displayed in the browser.
+
+3.  How is the null conditional operator different from a nullable type?  What is the purpose of nullable types?
+
+The operator allows the value to become nullable to catch anuy unhandle exceptions.
+Nullable type can already be null without causing any errors. 
+
+
+4.  When  you  create  an  automatic  property  and  initialize  the  property  with  a  value,  can  the  value  bechanged  later?   Can  another  value  be  assigned  to  the  property?   Can  the  value  be  changed  in  theconstructor?
+
+
+5.  What is an object initializer and what is it for?  What is an collection initializer and what is it for?
+
+create an object and specify its property values in a single step
+
+6.  What does the is keyword do?
+
+The is keyword performs a type check and, if a value is of the specified type, will assign the value to a new variable.
+
+7.  How are extension methods defined?
+
+Extension methods are a convenient way of adding methods to classes that you cannot modify directly
+
+8.  What is implicit typing or type inference?  How do you implement it?
+Using the VAR keyword to define a local variable without explicitly specifying the variable type
+
+9.  What is a default implementation of an interface?  What is the purpose of a default implementation of an interface?
+
+The description of features for the interface.
+makes it possible to update interfaces without breaking the existing implementations of them.
+
+10.  What are asynchronous methods?  Why should we use them?  How are they used?
+
+Asynchronous methods perform work in the background and notify you when they are complete, allowing your code to take care
+of other business while the background work is performed. Asynchronous methods are an important tool in removing bottlenecks
+from code and allow applications to take advantage of multiple processors and processor cores to perform work in parallel.
+
+11.  When you use the await keyword, do you have to use the async keyword?  Why or why not?
+
+tells the C# compiler that I want to wait for the result of
+the Task that the GetAsync method returns and then carry on executing other statements in the same method.
+Yes.
+because await
+and async are implemented using some clever compiler tricks,
+
+12.  (not in book) What is the yield keyword used for?  How do you use it?
+
+It is used for iteration. 
+
+13.  What is the effect of using the name of()expression?
+Reduces the need to hard code the implementation of different names and creating a interchanable expression for multiple names. 

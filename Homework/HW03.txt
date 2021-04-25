@@ -1,0 +1,60 @@
+--Name: Walter Cummings
+--File: ASPHW03
+--Date: Feb 28th, 2021
+
+
+1.  What is the most important part of an ASP.NET Core 3 application?
+The data model is the most important part; A representation of the real-world objects, processes and rules that define the subject known as domain or the app.
+
+
+2.  What is the domain model?
+Contain the C# objects that make up the universe of the app and the methods that manipulate them. 
+
+
+3.  Where are the model classes in an ASP.NET Core 3 application placed?
+In the folder MODELS.
+
+
+4.  How many action methods can a controller class define?
+Multiple.
+
+
+5.  What is a tag helper?
+instructions for the Razor app that will be performed when the view is rendered.
+
+
+6.  What does the asp-action attribute do?
+instruction to ass an href attribute to the element that contains a URL for an action method.
+
+
+7.  What  is  the  difference  between HTTP GET and HTTP POST?  This  is  an  important  question,  and  you should understand the difference.
+HTTPGET- a GET request is what a browser issues normally each time someone clicks a link. Responsible for displaying the intial blank form when someone first visits the page. 
+HTTPPOST- forms rendered using Html.BeginForm() are submitted by the browser as a post request. Responsible for receiving submitted data and deciding what to do with it.
+
+Both invoked by the same URL but ASP.NET core makes sure that the appropriate method is called.
+
+8.  What is model binding?
+ASP.NET feature where incomming data is parsed and the key/value pairs in the HTTP request are used to populate properties of domain model types.
+Reduces the exhuastion of dealing with HTTP requests directly and lets you work with c# objects rather than dealing with individual data values sent by the browser.
+
+
+9.  Why should we validate user data?  How do we validate user data?
+Users could enter invalid data or submit empty forms. 
+Applying attributes to model classes from System.ComponentModel.DataAnnotations namespace. 
+using the property ModelState, the details are provided and if the check passes TRUE then the validation is succesful. 
+
+
+10.  What, specifically, is the ModelState.IsValid property?
+Checks data and if it results in TRUE then the model binder has been able to satisfy the validation constraints. If not, provides the details as of why it did not pass.
+
+
+11.  What does the asp-validation-summary do?
+Attribute applied to the DIV element and displays a list of validation errors when the view is rendered. 
+
+
+12. Static content consists of content such as images,  script files,  style files,  etc.  In an ASP.NET Core application, what is the name of the folder that cotains static content?
+wwwroot folder and organized by content type. CSS goes to wwwroot/css and JS goes to wwwroot/js.
+
+
+13.  What is Bootstrap?  Who developed Bootstrap?  Is Bootstrap a proprietary package?  If not, what is it?
+Client side library choosen by Microsoft which is a CSS framework developed by Twitter that has become a major open source project and a mainstay of web app development. 

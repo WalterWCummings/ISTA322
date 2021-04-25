@@ -1,0 +1,60 @@
+--Name: Walter Cummings
+--File: ASPHW04
+--Date: Mar 1, 2021
+
+1.  What are the .NET SDK command line tools used for?  Is their use required?  Why or why not?
+Creating, managing, building, installing, and running projects.
+Visual Studio - has tools to support 
+Visual Studio Code - Requires command line tools.
+
+
+2.  What  kind  of  applications  do  the  following  templates  create?   Run  these  commands  and  read  thedocumentation.  A brief summary of each template is sufficient. 
+dotnet new console --help -- A project for creating a command-line application that can run on .NET Core on Windows, Linux and macOS
+Options; Creates a new project, configuration file, or solution based on the specified template.;  
+dotnet new mvc --help - A project template for creating an ASP.NET Core application
+dotnet new web --help - An empty project template for creating an ASP.NET Core application.
+
+
+3.  What, specifically, do the following commands do? 
+--dotnet new globaljson --sdk-version 3.1.101 --output MySolution/MyProject: creates a MySolution/MyProject folder that contains a global.json file, which specifies that the project
+will use .NET Core version 3.1.1. The top-level folder, named MySolution, is used to group multiple projects together. The nested
+MyProject folder will contain a single project.
+
+--dotnet new web --no-https --output MySolution/MyProject --framework netcoreapp3.1: creates the project using the web template
+
+--dotnet new sln -o MySolution: create a solution file that references the new project
+
+--dotnet sln MySolution add MySolution/MyProject: create a solution file that references the new project
+
+
+4.  What is the purpose of the global.json file?
+specifying the version of .NET Core that will be used.
+Adding the global.json file ensures the right version of the .NET Core SDK will be used by the project.
+
+
+5.  What does the method app.UseStaticFiles()do?
+adds support for responding to HTTP requests with static content in the wwwroot folder, such as the HTML file
+created in the previous section. 
+
+
+6.  What do the following two commands do? dotnet build dotnet run
+Dotnet build - builds the project
+Dotnet run - Runs the project
+The compiler will build the project and then start the integrated ASP.NET Core HTTP server to listen for HTTP requests on port
+5000.
+
+7.  (not in book) You cah manage pacakges using the NuGet package manager and the command line tooldotnet add package.  What are packages and what are they used for.
+contain compiled code (as DLLs) along with other content needed in the projects that consume these packages
+
+
+8.  What are tool packages and what are they used for?
+Tool packages install commands that can be used from the command line to perform operations on .NET Core projects.
+
+
+10.  What are client side packages and what are they used for?
+Client-side packages contain content that is delivered to the client, such as images, CSS stylesheets, JavaScript files, and static
+HTML.
+
+
+11.  List two ways that a developer can debug code.
+Using the Visual studio debugger or using command line tools to CW the error messages.
